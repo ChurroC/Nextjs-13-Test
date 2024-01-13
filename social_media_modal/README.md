@@ -1,4 +1,4 @@
-Not in fireship thing but though it was interesting to use intercepting routes.
+Test for intercepting routes.
 Like in social media where they show a modal for the post but then when you open the link on another page the whole page is dedicated to it.
 Also like a modal sign up but if you send the link then the past state data of where the page was won't be saved but show an entire page for sign up instead.
 
@@ -6,3 +6,7 @@ Basically from what I'm reading intercepting routes enable you to display the co
 So you'll still be on the same page while having a water down version of another page but if you directly open the other page with no context it will have the full page displayed.
 
 I'm going to have an image which if I press opens up a modal of the image with name info up top. Then the actual page iteself wiolll jsut have the pic and image.
+
+Figured out the modal I made is using 2 different methods.
+On the intercepting wich I used for the churro image.
+Then it is using paralllel route/ slots thing so that is the @modal
