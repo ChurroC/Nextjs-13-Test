@@ -1,11 +1,13 @@
 "use client";
+
 import { useEffect, useRef, ElementRef } from "react";
 import { useRouter } from "next/navigation";
 
 export default function Modal({ children }: { children: React.ReactNode }) {
     const router = useRouter();
+
     const dialogRef = useRef<ElementRef<"dialog">>(null);
-    const divRef = useRef<HTMLDivElement | null>(null);
+    const divRef = useRef<ElementRef<"div">>(null);
 
     useEffect(() => {
         dialogRef.current?.showModal();

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Modal2() {
@@ -16,6 +17,10 @@ export default function Modal2() {
             <>
                 This is Modal 2
                 <button onClick={causeError}>Click here to cause error</button>
+                <br />
+                <Link href="/dash/test2" className="font-bold">
+                    Test Slot 2
+                </Link>
             </>
         );
     }
