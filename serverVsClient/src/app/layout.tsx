@@ -21,6 +21,9 @@ export default function RootLayout({
 }: {
     children: React.ReactNode;
 }) {
+    console.log(
+        `${typeof window === "undefined" ? "SERVER" : "CLIENT"}: layout.tsx at: ${new Date().getTime()}`
+    );
     return (
         <html lang="en">
             <body className={`font-sans ${inter.variable}`}>
@@ -28,6 +31,7 @@ export default function RootLayout({
                     <Link href="/">Home</Link>
                     <Link href="/client">Client</Link>
                     <Link href="/server">Server</Link>
+                    <Link href="/composition">Composition</Link>
                 </nav>
                 {children}
             </body>
