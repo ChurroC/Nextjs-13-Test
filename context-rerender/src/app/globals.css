@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @keyframes change-background {
+        0% {
+            @apply bg-green-400;
+        }
+        100% {
+            @apply bg-white;
+        }
+    }
+    .change-background {
+        animation: change-background 1s linear;
+    }
+}
